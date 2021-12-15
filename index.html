@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Browsing and Web Pages</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Read about Internet basics relevant to Web development." />
+	</head>
+	<body>
+		<section>
+			<h1 Style="font-size:55px; text-decoration:underline">
+                Web Browsing and Web Page Concepts
+            </h1>
+			<p>
+				In this reading, you will learn details about navigating among web pages.
+				Understanding these details will help you make good decisions when implementing your own web pages.
+			</p>
+		</section>
+		<section>
+			<h2>Browsers</h2>
+			<p>
+				Which Web browser do you prefer to use? A Web browser is a program on a computer that displays Web pages and allows the user to browse the Web easily. You may be familiar with Internet Explorer, Google Chrome, Safari, Firefox, or Edge. These are all Web browsers. They provide handy features such as placing Web pages in multiple tabs for easy viewing, saving favorite Web sites, and easily navigating backward through your history.
+			</p>
+			<h2>URLs</h2>
+			<p>
+				<img style="float:right;" src="fig1_1.png" alt="Shows where to put a URL in Firefox" />To get started with a Web browser, we often set up a homepage at a search engine such as Google or Yahoo! in order to make browsing even easier. Other times, one begins browsing the Web by typing in a specific Web address. These addresses are called Uniform Resource Locators, or URLs, and every Web site has one. This URL may be in the form of an IP address (a set of numbers separated by periods) or a domain name (e.g. www.somewebsite.com). Additionally, specific Web pages may have an extra path or filename which is added to the IP/domain with a forward slash ( / ). For example, www.somewebsite.com/path/filename.html.
+			</p>
+            <p>
+                <img src="Part%20of%20a%20URL.png" height="200" style="margin-left: 5%">
+            </p>
+			<h2>Request-Response Pattern</h2>
+			<p>
+				Whenever you type in an address, click on a hyperlink, or submit a form, your Web browser (also called a "client") makes a <strong>request</strong> that is sent out into the Internet cloud. This request includes information about the Web page you are trying to reach and the computer you are using. When the server that holds the page receives the request, it sends a <strong>response</strong> back to your computer. This response will be the Web page that you requested, or it will be a message about how the server could not find, create, or deliver the page you requested.
+			</p>
+			<p><img src="fig1_2.png" alt="Diagrams Request-Response Relationship" style="margin-left: 5%"/></p>
+			<p>
+				Modern browsers also have development tools which allow you to see the real-time hierarchical structure of the HTML by <em>inspecting</em> the elements of the page. Right-click on any element of the page and choose the "Inspect" option to examine the code as the browser has understood it, rather than how it was delivered by the server. A well-coded web site will not have much difference between how the code was delivered versus how the code was understood by the browser.
+			</p>
+			<h2>HTML and CSS</h2>
+	        <p>
+				Together, HTML and CSS are read by the web browser to <strong>render</strong> the visual representation of what you see when you open a web page in a web browser.
+			</p> 		
+            <p>
+				<strong>HTML</strong> - The acronymn HTML stands for <strong>HyperText Markup Language</strong>. The word <em>HyperText</em> implies that it is used for text-based content with hyperlinks to connect resources in a logical way. The term <em>Markup Language</em> implies that you use this code to "mark up" or add syntax to your content in order to give it more features than simply being a text document.
+			</p>
+			<p>
+				The primary purpose of HTML is to <em>organize</em> your content in a way that is meaningful for your audience, including human visitors, search engines, and even the browser itself. For example, there are 6 levels of headings that can be used to title your content in a hierarchical way. As another example, listed data can be put into two different kinds of list structures: an unordered (bulleted) list or an ordered (numbered) list.
+			</p>
+            <p>
+				<strong>CSS</strong> - The acronymn CSS stands for <strong>Cascading Style Sheets</strong>. In a future lesson we will learn more about the "cascade" but for now we will focus on the style sheets themselves.
+			</p>
+			<p>
+				The primary purpose of CSS is to <em>format</em> your content for your human visitors. This is where most of the work will be when we convert designs into sites. This is accomplished using CSS <em>properties</em> which have adjustable values, such as font-size.
+			</p>
+            <h2>Web Design vs. Web Develop</h2>
+            <p>
+                In essence, web design refers to both the aesthetic portion of the website and it’s usability. Web designers use various design programs such as Adobe Photoshop to create the layout and other visual elements of the website.
+            </p>
+		</section>
+		<section>
+			<h2>Activities</h2>
+			<ol>
+				<li>
+					<strong>Navigate around the web.</strong> Start by visiting http://google.com, using your browser's URL input to type the URL and request resources from Google. After the browser shows you Google's home page as the response, type "W3Schools" in the search form, and submit the form to send a new request. Google will respond again with a list of search results. Click the first hyperlink to send a request to the W3School's web site, and examine the response.
+				</li>
+				<li>
+					<strong>Examine pages at a web site.</strong> Now that you are at the W3Schools homepage, you can see navigation menus that show other pages at the W3Schools web site. Click some of the links to examine the different pages available on the site. What seems to be the purpose of the W3Schools web site? What do you notice about how the pages are organized in the navigation menus?
+				</li>
+				<li>
+					<strong>View the code of a web page.</strong> Whichever page you are viewing at the W3Schools site, examine the code using both the "View Source" option and the "Inspect" option. Notice how the "View Source" option is static -- it does not let you edit the code and may be hard to read -- whereas the "Inspect" option is dynamic -- it allows you to edit the code and see your changes, automatically formatting your HTML elements and CSS properties for easy reading.
+				</li>
+                <li>
+					<strong>Analyze designs.</strong> With a partner, find a website that has a good design, and find another website with a bad design. Use the core principles of design (readability and usability) to describe what makes those sites good or bad.
+				</li>
+				<li>
+					<strong>Challenge: Browser Market Share</strong> Find information about which browsers are used by which percentages of internet users. Break down the share for Internet Explorer by version. Don't forget mobile browsers!
+				</li>
+				<li>
+					<strong>Challenge: Purpose of HTML Tags</strong> When you view the code of a web page, you may have noticed the angle-bracket syntax of each HTML &lt;tag&gt;. By viewing the sources and inspecting the elements of several web pages, can you begin to guess the individual purposes of the HTML tags you see?
+				</li>
+			</ol>
+		</section>
+	</body>
+</html>
